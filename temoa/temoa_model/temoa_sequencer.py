@@ -152,7 +152,9 @@ class TemoaSequencer:
             try:
                 print(self.config.__repr__())
                 print('\nPlease press enter to continue or Ctrl+C to quit.\n')
-                input()  # Give the user a chance to confirm input
+                # input()  # Give the user a chance to confirm input
+                print('Bypassing user input for quickrun.py\n')  # --- IGNORE ---
+
             except KeyboardInterrupt:
                 logger.warning('User aborted from confirmation page.  Exiting')
                 print('\n\nUser requested quit.  Exiting Temoa ...\n')
